@@ -1,0 +1,20 @@
+{
+  "name": "typescript-lambda-bundle",
+  "version": "1.0.0",
+  "description": "Example of a TS lambda",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+	  "build": "tsc src/index.ts",
+	  "postbuild": "parcel build src/index.js --out-dir dist",
+	  "prebuild": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.0",
+    "eslint": "^6.8.0",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  }
+}
