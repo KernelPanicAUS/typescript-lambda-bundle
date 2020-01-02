@@ -1,18 +1,13 @@
-import { Callback, S3CreateEvent } from "aws-lambda";
+import { S3CreateEvent } from "aws-lambda";
 import EC2 from "aws-sdk/clients/ec2";
 
-require("source-map-support").install({
-  environment: "node",
-});
 const client = new EC2({ region: "eu-central-1" });
-
-// tslint:disable-next-line: interface-name
-interface Response {
+interface IResponse {
   statusCode: number;
   body: string;
 }
-throw new Error("hello from the other side");
-exports.handler = async (event: S3CreateEvent, callback: Callback) => {
+
+exports.handler = async (event: S3CreateEvent) => {
   const ids: string[] | void = await client.describeVpcs()
     .promise()
     .then((r) => {
@@ -23,10 +18,10 @@ exports.handler = async (event: S3CreateEvent, callback: Callback) => {
     })
     .catch((e) => console.error(`Error occured: ${e.message}`));
 
-  const response: Response = {
-    body: ids ? ids[0] : "empty",
+  const response: IResponse = {
+    body: JSON.stringify({ ids, input: event }),
     statusCode: 200,
   };
 
-  callback("hello world", null);
+  return response;
 };
