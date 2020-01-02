@@ -1,5 +1,5 @@
 const path = require('path');
-
+const ZipPlugin = require('zip-webpack-plugin');
 module.exports = {
   entry: './src/index.ts',
   mode: 'production',
@@ -17,9 +17,16 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ],
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    library: 'main',
+    libraryTarget: 'commonjs2'
   },
+  plugins: [
+    new ZipPlugin({
+      filename: 'lambda.zip',
+    }),
+  ],
   stats: {
     warnings: false
   },
