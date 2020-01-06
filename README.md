@@ -26,10 +26,10 @@ $ ls -lah lambda.zip
 Alternatively, triggering the webpack build results in a much smaller deployable, in this case, a 98.4% reduction in size.
 
 ```bash
-yarn build
+$ yarn build
 yarn run v1.19.0
-$ rimraf dist
-$ NODE_ENV=production webpack
+  rimraf dist
+  NODE_ENV=production webpack
 Hash: 23e3e82877c8dc59e612
 Version: webpack 4.41.5
 Time: 9805ms
@@ -54,6 +54,7 @@ drwxr-xr-x 20 thomas.khalil  640 Jan  6 14:33 ..
 ```
 
 ## Try it out locally
+
 All you need to run this example locally is to have [NodeJs](https://nodejs.org/dist/v12.14.0/node-v12.14.0.pkg) installed (LTS version is 12.14.0 as of this writing) and [yarn](https://yarnpkg.com/en/docs/install#mac-stable) for package management.
 
 ```bash
