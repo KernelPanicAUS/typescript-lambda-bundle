@@ -23,10 +23,10 @@
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.46.tgz#3246348cdc15921bd065966109fc1c6f6d5cfd96"
   integrity sha512-88E4Hlypo3AE40wslm7N4n09lCIJwgYJm5wsaA3/Vib1xqjC/ANePTaPRpPdj9NzBSpw7Tgon58qGMYEArx4oA==
 
-"@types/node@^13.9.2":
-  version "13.9.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.2.tgz#ace1880c03594cc3e80206d96847157d8e7fa349"
-  integrity sha512-bnoqK579sAYrQbp73wwglccjJ4sfRdKU7WNEZ5FW4K2U6Kc0/eZ5kvXG0JKsEKFB50zrFmfFt52/cvBbZa7eXg==
+"@types/node@^13.9.3":
+  version "13.9.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.3.tgz#6356df2647de9eac569f9a52eda3480fa9e70b4d"
+  integrity sha512-01s+ac4qerwd6RHD+mVbOEsraDHSgUaefQlEdBbUolnQFjKwCr7luvAlEwW1RFojh67u0z4OUTjPn9LEl4zIkA==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
