@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.46",
+    "@types/aws-lambda": "^8.10.47",
     "@types/node": "^13.9.4",
     "eslint": "^6.8.0",
     "rimraf": "^3.0.2",
