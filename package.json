@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.51",
-    "@types/node": "^14.0.4",
+    "@types/node": "^14.0.5",
     "eslint": "^7.0.0",
     "rimraf": "^3.0.2",
     "ts-loader": "^7.0.4",
