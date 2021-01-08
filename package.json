@@ -22,7 +22,7 @@
     "zip-webpack-plugin": "^3.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.823.0",
+    "aws-sdk": "^2.824.0",
     "source-map-support": "^0.5.19"
   }
 }
