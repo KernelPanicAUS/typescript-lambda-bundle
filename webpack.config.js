@@ -14,6 +14,9 @@ module.exports = {
     ],
   },
   resolve: {
+    fallback: { 
+      "util": require.resolve("util/"),
+    },
     extensions: [ '.tsx', '.ts', '.js' ],
   },
   output: {
